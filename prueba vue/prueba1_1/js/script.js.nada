@@ -1,0 +1,28 @@
+var app = new Vue({
+    el: "#app",
+    data:{
+        opciones: '',
+        ancho: 150,
+        
+    },
+    computed: {
+         msj: function(){
+            if (this.opciones == "img/bob.png"){
+                return  'Bob Esponja: Vive en una piña debajo del mar.'
+            }else
+            if (this.opciones == "img/Minnie.png"){
+                return   'Minnie Mouse: Es la linda novia de Mickey Mouse.'
+            }else 
+            if(this.opciones == "img/Goofy.png"){
+                return  'Goofy: Es uno de los mejores amigos de Mickey Mouse.'
+            }else 
+            if(this.opciones == "img/pikachu.png"){
+                return 'Pikachu: Es el pokémon más conocido de la historia ya que es el acompañante de Ash Ketchum.'
+            }else 
+            if(this.opciones == "img/Mickey.png"){
+                return  ' Mickey Mouse: Es el raton mas famoso del mundo.'
+            }
+         }    
+    }
+})
+

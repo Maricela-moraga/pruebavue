@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..::prueba::..</title>
+</head>
+<body>
+    <div id="app">
+        <select v-model= opciones >
+            <option value="img/bob.png">Bob esponja</option>
+            <option value="img/Minnie.png">Minie Mouse</option>
+            <option value="img/Goofy.png">Goofy</option>>
+            <option value="img/pikachu.png">Pikachu</option>
+            <option value="img/Mickey.png">Mickey Mouse</option>     
+        </select>
+
+        <br><br>
+        <img v-bind:src="opciones" v-bind:width="ancho">
+      
+        {{msj}}
+        
+    </div>
+            
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="JS/script.js" type="module"></script>
+</html>
